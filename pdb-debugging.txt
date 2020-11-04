@@ -1,0 +1,23 @@
+# debug in command line:
+# python3 -m pdb test.py --> start pdb debugging
+
+pdb command line:
+l --> list current step in the code
+n --> next
+b 7 --> breakpoint at line 7
+b --> show breakpoints
+c --> continue until the next breakpoint
+clear 1 --> clear the 1st breakpoint
+clear --> clear all breakpoints
+p xx --> print xx parameter, e.g.: print a, print f1(11, 22)
+a --> args print all formal paramenters
+s --> step into (a loop or a function)
+r --> return quickly execute the whole function
+q --> quit pdb debugging
+
+# debug in interactive mode:
+import pdb
+# set a breakpoint
+pdb.set_trace()
+# debug a function
+pdb.run("foo(11,22)")
